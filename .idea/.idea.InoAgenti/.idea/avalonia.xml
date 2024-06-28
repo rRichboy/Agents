@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="InoAgenti/Views/Add/AddEditWindow.axaml" value="InoAgenti/InoAgenti.csproj" />
+        <entry key="InoAgenti/Views/Add/EditWindow.axaml" value="InoAgenti/InoAgenti.csproj" />
+        <entry key="InoAgenti/Views/ChangePriorityDialog.axaml" value="InoAgenti/InoAgenti.csproj" />
+        <entry key="InoAgenti/Views/ChangePriorityWindow.axaml" value="InoAgenti/InoAgenti.csproj" />
+        <entry key="InoAgenti/Views/MainWindow.axaml" value="InoAgenti/InoAgenti.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
