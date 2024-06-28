@@ -13,18 +13,18 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InoAgenti
-build_property.ProjectDir = C:\Users\glkho\OneDrive\Рабочий стол\Сессия\InoAgenti\InoAgenti\
+build_property.ProjectDir = C:\Users\glkho\RiderProjects\Agents\InoAgenti\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/glkho/OneDrive/Рабочий стол/Сессия/InoAgenti/InoAgenti/App.axaml]
+[C:/Users/glkho/RiderProjects/Agents/InoAgenti/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/glkho/OneDrive/Рабочий стол/Сессия/InoAgenti/InoAgenti/Views/Add/AddEditWindow.axaml]
+[C:/Users/glkho/RiderProjects/Agents/InoAgenti/Views/Add/AddEditWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/glkho/OneDrive/Рабочий стол/Сессия/InoAgenti/InoAgenti/Views/ChangePriorityWindow.axaml]
+[C:/Users/glkho/RiderProjects/Agents/InoAgenti/Views/ChangePriorityWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/glkho/OneDrive/Рабочий стол/Сессия/InoAgenti/InoAgenti/Views/MainWindow.axaml]
+[C:/Users/glkho/RiderProjects/Agents/InoAgenti/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

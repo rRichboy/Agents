@@ -18,7 +18,7 @@
 
         <!-- Search and Filter Controls -->
         <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="10" Margin="0,0,0,10">
-            <TextBox Width="300" Watermark="Введите для поиска" x:Name="Search" KeyUp="Search_KeyUp"/>
+            <TextBox Width="300" Watermark="Введите для поиска" x:Name="Search" KeyUp="Search_KeyUp" />
 
             <ComboBox Name="SortComboBox" SelectedIndex="0" Width="200" SelectionChanged="Sort">
                 <ComboBoxItem Content="Сортировка" />
@@ -41,7 +41,7 @@
         </StackPanel>
 
         <!-- Agent List -->
-        <ListBox Grid.Row="1" ItemsSource="{Binding Agents}" SelectionMode="Multiple" DoubleTapped="EditAgent"
+        <ListBox Grid.Row="1" ItemsSource="{Binding _agents}" SelectionMode="Multiple" DoubleTapped="EditAgent"
                  x:Name="Agent">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -56,7 +56,7 @@
                                 <TextBlock Text="{Binding Email}" />
                                 <TextBlock Text="{Binding Priority, StringFormat='{} Приоритетность: {0}'}" />
                             </StackPanel>
-                            <TextBlock Grid.Column="2" Text="{Binding SuccessRate, StringFormat='{}{0}%'}"
+                            <TextBlock Grid.Column="2" Text="{Binding DiscountRate, StringFormat='{}{0}%'}"
                                        FontSize="24" VerticalAlignment="Center" />
                         </Grid>
                     </Border>
@@ -67,8 +67,18 @@
         <!-- Pagination -->
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
             <Button Content="Добавить агента" Click="AddAgent" />
-            <Button Content="Изменить приоритет на .." Click="ChangePriorityButton_Click" IsVisible="False" x:Name="ChangePriorityButton"/>
-            <TextBlock Text="&lt; 1 2 3 4 &gt;" FontSize="16" />
+            <Button Content="Изменить приоритет на .." Click="ChangePriorityButton_Click" IsVisible="False"
+                    x:Name="ChangePriorityButton" />
+            <Button Content="&lt;" Click="PreviousPage_Click" />
+            <ListBox ItemsSource="{Binding _pageNumbers}" SelectionChanged="PageNumber_SelectionChanged">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" />
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListBox>
+            <Button Content="&gt;" Click="NextPage_Click" />
         </StackPanel>
+
     </Grid>
 </Window>

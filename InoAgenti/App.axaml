@@ -11,5 +11,8 @@
   
     <Application.Styles>
         <FluentTheme />
+        <Style Selector="Window">
+            <Setter Property="FontFamily" Value="C:\Users\glkho\RiderProjects\Agents\InoAgenti\Assets\centurygothic.ttf"/>
+        </Style> 
     </Application.Styles>
 </Application>

@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\glkho\\OneDrive\\Рабочий стол\\Сессия\\InoAgenti\\InoAgenti\\InoAgenti.csproj": {}
+    "C:\\Users\\glkho\\RiderProjects\\Agents\\InoAgenti\\InoAgenti.csproj": {}
   },
   "projects": {
-    "C:\\Users\\glkho\\OneDrive\\Рабочий стол\\Сессия\\InoAgenti\\InoAgenti\\InoAgenti.csproj": {
+    "C:\\Users\\glkho\\RiderProjects\\Agents\\InoAgenti\\InoAgenti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\glkho\\OneDrive\\Рабочий стол\\Сессия\\InoAgenti\\InoAgenti\\InoAgenti.csproj",
+        "projectUniqueName": "C:\\Users\\glkho\\RiderProjects\\Agents\\InoAgenti\\InoAgenti.csproj",
         "projectName": "InoAgenti",
-        "projectPath": "C:\\Users\\glkho\\OneDrive\\Рабочий стол\\Сессия\\InoAgenti\\InoAgenti\\InoAgenti.csproj",
+        "projectPath": "C:\\Users\\glkho\\RiderProjects\\Agents\\InoAgenti\\InoAgenti.csproj",
         "packagesPath": "C:\\Users\\glkho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\glkho\\OneDrive\\Рабочий стол\\Сессия\\InoAgenti\\InoAgenti\\obj\\",
+        "outputPath": "C:\\Users\\glkho\\RiderProjects\\Agents\\InoAgenti\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\glkho\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\glkho\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -81,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\glkho\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

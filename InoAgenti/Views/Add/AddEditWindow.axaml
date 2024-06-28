@@ -18,11 +18,15 @@
         </ComboBox>
 
         <TextBox Watermark="Имя:" Name="Name" />
-        <TextBox Watermark="Размер скидки:" Name="SalesCount" />
+        <TextBox Watermark="Продаж за год:" Name="SalesCount" />
         <TextBox Watermark="Номер телефона:" Name="PhoneNumber" />
         <TextBox Watermark="Почта:" Name="Email" />
         <TextBox Watermark="Приоритет:" Name="Priority" />
-        <TextBox Watermark="SuccessRate:" Name="SuccessRate" />
+        <TextBox Watermark="Address:" Name="Address" />
+        <TextBox Watermark="INN:" Name="INN" />
+        <TextBox Watermark="KPP:" Name="KPP" />
+        <TextBox Watermark="DirectorName" Name="DirectorName"/>
+        
 
         <Button x:Name="CreateAgentButton" Click="CreateAgent" />
         <Button x:Name="DeleteAgentButton" Click="DeleteAgent" Content="Удалить агента" IsVisible="False" />

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0BT9M4Lbz+7V+cJtRpNu8/Vwjt3zSpsUx3yfXJo60inEQTaUYL6m3PioZbaKdwycfRzPrXlM6h59vPXYSyc9vg==",
+  "dgSpecHash": "O+wJTWTv3Qv27lz8uYjpAwSn59PWdFi/vR53MK/vYzcU49AUDHeqFtbioKG00euoPI4r1pmJJ0U/iWa0I+1Vvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\glkho\\OneDrive\\Рабочий стол\\Сессия\\InoAgenti\\InoAgenti\\InoAgenti.csproj",
+  "projectFilePath": "C:\\Users\\glkho\\RiderProjects\\Agents\\InoAgenti\\InoAgenti.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\glkho\\.nuget\\packages\\avalonia\\11.0.2\\avalonia.11.0.2.nupkg.sha512",
     "C:\\Users\\glkho\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2023020321\\avalonia.angle.windows.natives.2.1.0.2023020321.nupkg.sha512",
