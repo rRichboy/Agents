@@ -57,7 +57,7 @@ public partial class MainWindow : Window
             viewModel.Search(searchText);
         }
     }
-    private void Agent_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    private void Agent_SelectionChanged(object sender, RoutedEventArgs e)
     {
         ChangePriorityButton.IsVisible = Agent.SelectedItems.Count > 2;
     }

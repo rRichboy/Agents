@@ -30,11 +30,5 @@ public class Agent
             DiscountRate = 20;
         else
             DiscountRate = 25;
-
-        if (DiscountRate == 25)
-        {
-            
-        }
-        
     }
 }

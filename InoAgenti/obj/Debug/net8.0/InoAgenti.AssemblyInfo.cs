@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InoAgenti")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a99f59ae82fd12fc6c2c87a6670f307440169f48")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f87fef6b46423a48d3e2eff5f6f5abc91ddd6102")]
 [assembly: System.Reflection.AssemblyProductAttribute("InoAgenti")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InoAgenti")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

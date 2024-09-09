@@ -4,19 +4,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="InoAgenti.Views.Add.AddEditWindow"
-        Title="Add/EditWindow">
-
+        Title="">
     <StackPanel>
         <Button x:Name="AddPhotoButton" Content="Добавить фото" Click="AddPhoto" />
-
         <ComboBox Name="TypeComboBox" Width="200" SelectedIndex="0">
-            <ComboBoxItem Content="Очень плохой" />
             <ComboBoxItem Content="Плохой" />
-            <ComboBoxItem Content="Средний" />
             <ComboBoxItem Content="Хороший" />
-            <ComboBoxItem Content="Очень хороший" />
+            <ComboBoxItem Content="Нормальный" />
+            <ComboBoxItem Content="Топ" />
+            <ComboBoxItem Content="Бест" />
         </ComboBox>
-
         <TextBox Watermark="Имя:" Name="Name" />
         <TextBox Watermark="Продаж за год:" Name="SalesCount" />
         <TextBox Watermark="Номер телефона:" Name="PhoneNumber" />
@@ -25,13 +22,9 @@
         <TextBox Watermark="Address:" Name="Address" />
         <TextBox Watermark="INN:" Name="INN" />
         <TextBox Watermark="KPP:" Name="KPP" />
-        <TextBox Watermark="DirectorName" Name="DirectorName"/>
-        
-
+        <TextBox Watermark="DirectorName" Name="DirectorName" />
         <Button x:Name="CreateAgentButton" Click="CreateAgent" />
         <Button x:Name="DeleteAgentButton" Click="DeleteAgent" Content="Удалить агента" IsVisible="False" />
-        
         <TextBlock HorizontalAlignment="Center" Name="Error" Foreground="Red" />
     </StackPanel>
-
 </Window>

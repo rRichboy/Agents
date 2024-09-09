@@ -13,6 +13,7 @@
         <FluentTheme />
         <Style Selector="Window">
             <Setter Property="FontFamily" Value="C:\Users\glkho\RiderProjects\Agents\InoAgenti\Assets\centurygothic.ttf"/>
+            <Setter Property="Icon" Value="C:\Users\glkho\RiderProjects\Agents\InoAgenti\Assets\logo.png"/>
         </Style> 
     </Application.Styles>
 </Application>

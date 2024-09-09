@@ -7,7 +7,7 @@
         x:Class="InoAgenti.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/logo.png"
-        Title="InoAgenti">
+        Title="">
 
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -15,12 +15,9 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-
-        <!-- Search and Filter Controls -->
         <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="10" Margin="0,0,0,10">
             <TextBox Width="300" Watermark="Введите для поиска" x:Name="Search" KeyUp="Search_KeyUp" />
-
-            <ComboBox Name="SortComboBox" SelectedIndex="0" Width="200" SelectionChanged="Sort">
+            <ComboBox Name="SortComboBox" SelectedIndex="0" Width="222" SelectionChanged="Sort">
                 <ComboBoxItem Content="Сортировка" />
                 <ComboBoxItem Content="От А до Я наименование" />
                 <ComboBoxItem Content="От Я до А наименование" />
@@ -29,18 +26,15 @@
                 <ComboBoxItem Content="Приоритет по возрастанию" />
                 <ComboBoxItem Content="Приоритет по убыванию" />
             </ComboBox>
-
             <ComboBox Name="TypeComboBox" Width="200" PlaceholderText="Фильтрация" SelectionChanged="filtration">
                 <ComboBoxItem Content="Все типы" />
-                <ComboBoxItem Content="Очень плохой" />
                 <ComboBoxItem Content="Плохой" />
-                <ComboBoxItem Content="Средний" />
                 <ComboBoxItem Content="Хороший" />
-                <ComboBoxItem Content="Очень хороший" />
+                <ComboBoxItem Content="Нормальный" />
+                <ComboBoxItem Content="Топ" />
+                <ComboBoxItem Content="Бест" />
             </ComboBox>
         </StackPanel>
-
-        <!-- Agent List -->
         <ListBox Grid.Row="1" ItemsSource="{Binding _agents}" SelectionMode="Multiple" DoubleTapped="EditAgent"
                  x:Name="Agent">
             <ListBox.ItemTemplate>
@@ -49,11 +43,16 @@
                         <Grid ColumnDefinitions="Auto,*,Auto" Margin="10">
                             <Image Grid.Column="0" Width="100" Height="100" Source="{Binding ImagePath}" />
                             <StackPanel Grid.Column="1" Margin="10,0,0,0">
-                                <TextBlock Text="{Binding Type}" FontWeight="Bold" />
-                                <TextBlock Text="{Binding Name}" />
+                                <TextBlock FontWeight="Bold">
+                                    <TextBlock.Text>
+                                        <MultiBinding StringFormat=" {0} | {1}">
+                                            <Binding Path="Type" />
+                                            <Binding Path="Name" />
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
                                 <TextBlock Text="{Binding SalesCount, StringFormat='{} {0} продаж за год'}" />
                                 <TextBlock Text="{Binding PhoneNumber}" />
-                                <TextBlock Text="{Binding Email}" />
                                 <TextBlock Text="{Binding Priority, StringFormat='{} Приоритетность: {0}'}" />
                             </StackPanel>
                             <TextBlock Grid.Column="2" Text="{Binding DiscountRate, StringFormat='{}{0}%'}"
@@ -63,8 +62,6 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-
-        <!-- Pagination -->
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
             <Button Content="Добавить агента" Click="AddAgent" />
             <Button Content="Изменить приоритет на .." Click="ChangePriorityButton_Click" IsVisible="False"
@@ -79,6 +76,5 @@
             </ListBox>
             <Button Content="&gt;" Click="NextPage_Click" />
         </StackPanel>
-
     </Grid>
 </Window>
